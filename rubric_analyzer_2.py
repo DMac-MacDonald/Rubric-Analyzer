@@ -39,8 +39,8 @@ for idxF, filename in enumerate(os.listdir(cardDirectory)): #Loop to allow for c
 
         for idxI, i in enumerate(bubbleBox):#Bubble for loop
 
-            scoreDetect = 0 #sets detect variable to false
-            currentBubble = currentLine.crop(i) #crops line iamge to each bubble
+            scoreDetect = 0
+            currentBubble = currentLine.crop(i) #crops line image to each bubble
 
             for x in range(currentBubble.width): #checks if there is a black pixel in the bubble image, if there is, sets detect variable to true
                     for y in range(currentBubble.height):
